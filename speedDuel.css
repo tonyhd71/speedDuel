@@ -1,0 +1,28 @@
+#p1SpellsAndMonsters {
+    display: flex;
+    flex-direction: column;
+}
+.p1MonsterZone{
+    display: flex;
+    flex-direction: row;
+}
+.p1SpellZone {
+    display: flex;
+    flex-direction: row;
+}
+.p1MonsterZone > div, .p1SpellZone > div, #p1BanishAndGrave > div, #fieldAndSkill > div{
+    height: 242px;
+    width: 164px;
+    margin: 15px;
+    border: 1px solid black;;
+}
+#p1Field {
+    display: flex;
+    flex-direction: row;
+}
+#p1BanishAndGrave, #fieldAndSkill, #p1SpellsAndMonsters {
+    border: 1px solid black;;
+}
+#cupField {
+    display: flex;
+}
