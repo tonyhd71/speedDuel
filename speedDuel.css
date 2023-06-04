@@ -1,28 +1,56 @@
-#p1SpellsAndMonsters {
+.cpuExtraAndField > div,.cpuMonsters > div, .cpuSpells >div, .cpuDeckAndGrave > div, #cpuHand > div, #p1Hand > div, .p1ExtraAndField > div,.p1Monsters > div, .p1Spells >div, .p1DeckAndGrave > div, #p1Hand > div  {
+    height: 100px;
+    border: 1px solid black;
+    width: 50px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.cpuExtraAndField,.cpuDeckAndGrave, .p1ExtraAndField, .p1DeckAndGrave {
     display: flex;
     flex-direction: column;
 }
-.p1MonsterZone{
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cpuField, .p1Field {
+    display: inline-flex;
+
+}
+.cpuMonsters, .cpuSpells, .p1Monsters, .p1Spells {
     display: flex;
     flex-direction: row;
 }
-.p1SpellZone {
+.cpuExtraAndField, .p1ExtraAndField {
+    margin-right: 20%;
+}
+.cpuDeckAndGrave, .p1DeckAndGrave {
+    margin-left: 20%;
+}
+#field {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#cpuHand {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5%;
 }
-.p1MonsterZone > div, .p1SpellZone > div, #p1BanishAndGrave > div, #fieldAndSkill > div{
-    height: 242px;
-    width: 164px;
+#p1Hand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}
+#phases {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    color: white;
+    padding: 15px;
     margin: 15px;
-    border: 1px solid black;;
-}
-#p1Field {
-    display: flex;
-    flex-direction: row;
-}
-#p1BanishAndGrave, #fieldAndSkill, #p1SpellsAndMonsters {
-    border: 1px solid black;;
-}
-#cupField {
-    display: flex;
 }
